@@ -1,0 +1,232 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* GENERAL */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Hanken Grotesk", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 144rem;
+  height: 95vh;
+  background-color: lightcyan;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+}
+/* MOBILE FIRST */
+
+/* THE FIRST CARD */
+.card-result {
+  width: 37.5rem;
+  height: 37.5rem;
+  margin: 1rem auto;
+  background-image: linear-gradient(
+    to left bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  z-index: 1000;
+}
+
+.title-result-box {
+  text-align: center;
+}
+.title-result {
+  padding: 2rem;
+  color: lightgray;
+}
+
+.count-box {
+  text-align: center;
+  margin: 2rem auto;
+  width: 15rem;
+  height: 15rem;
+
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to right bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  display: grid;
+  align-items: center;
+  row-gap: 5px;
+}
+
+.count {
+  display: block;
+  font-size: 5rem;
+  font-weight: 700;
+  color: white;
+  align-self: end;
+}
+
+.percentage {
+  align-self: start;
+  font-size: 1.2rem;
+  color: lightgray;
+}
+
+.congrats-box {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.text-box {
+  margin: 1.5rem;
+}
+
+.result-text {
+  padding: 1rem 2rem 2rem 2rem;
+
+  color: lightgray;
+  line-height: 1.1;
+}
+
+/* THE SECOND CARD */
+.card-summary {
+  width: 37.5rem;
+  height: 37.5rem;
+  margin: -2.5rem auto;
+  background-color: white;
+  z-index: 100;
+  padding: 5rem 2rem;
+}
+
+.title-summary-box {
+  padding: 0 0 1rem 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.reaction-box,
+.memory-box,
+.verbal-box,
+.visual-box {
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reaction,
+.memory,
+.verbal,
+.visual {
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-right: 9rem;
+}
+.icon {
+  margin-left: 1rem;
+}
+
+.reaction,
+.icon-reaction {
+  color: hsl(0, 100%, 67%);
+}
+
+.memory,
+.icon-memory {
+  color: hsl(39, 100%, 56%);
+}
+.verbal,
+.icon-verbal {
+  color: hsl(166, 100%, 37%);
+}
+
+.visual,
+.icon-visual {
+  color: hsl(234, 85%, 45%);
+}
+.reaction-box {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.memory-box {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+.verbal-box {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+.visual-box {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+.count-nmb {
+  font-weight: 700;
+}
+
+.btn-box {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.btn-main {
+  width: 90%;
+  border: none;
+  text-transform: capitalize;
+  border-radius: 50px;
+  color: lightgray;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 1.2rem 3rem;
+  background-color: hsla(234, 85%, 45%, 0.5);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-main:hover,
+.btn-main:visited {
+  background-color: hsla(234, 85%, 45%, 0.7);
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 2rem hsla(234, 85%, 45%, 0.5);
+}
+
+.btn-main:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.2rem 1rem hsla(234, 85%, 45%, 0.5);
+}
+
+.attribution {
+  margin-top: -10rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+
+@media all and (min-width: 1100px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+  }
+  .card-result {
+    border-radius: 25px;
+    margin-right: 0rem;
+  }
+  .card-summary {
+    margin-left: -15px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+}

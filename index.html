@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+
+    <title>Results summary App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="main.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-result">
+        <div class="title-result-box">
+          <h4 class="title-result">Your Result</h4>
+        </div>
+        <div class="count-box">
+          <span class="count average"></span>
+          <span class="percentage">per 100</span>
+        </div>
+        <div class="congrats-box">
+          <h3 class="congrats-text">Great</h3>
+        </div>
+        <div class="text-box">
+          <p class="result-text">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </div>
+      <div class="card-summary">
+        <div class="title-summary-box">
+          <h4 class="title-summary">Summary</h4>
+        </div>
+        <div class="reaction-box">
+          <span class="icon-reaction icon"
+            ><i class="fa-solid fa-bolt"></i
+          ></span>
+          <span class="reaction">reaction</span>
+          <span class="reaction-count"
+            ><span class="count-nmb R"></span> /100</span
+          >
+        </div>
+        <div class="memory-box">
+          <span class="icon-memory icon"
+            ><i class="fa-solid fa-brain"></i
+          ></span>
+          <span class="memory">memory</span>
+          <span class="memory-count"
+            ><span class="count-nmb M"></span> /100</span
+          >
+        </div>
+        <div class="verbal-box">
+          <span class="icon-verbal icon"
+            ><i class="fa-solid fa-comment-dots"></i
+          ></span>
+          <span class="verbal">verbal</span>
+          <span class="verbal-count"
+            ><span class="count-nmb Ve"></span> /100</span
+          >
+        </div>
+        <div class="visual-box">
+          <span class="icon-visual icon"><i class="fa-solid fa-eye"></i></span>
+          <span class="visual">visual</span>
+          <span class="visual-count"
+            ><span class="count-nmb Vi"></span> /100</span
+          >
+        </div>
+        <div class="btn-box">
+          <button class="btn-main">continue</button>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Gino Van Dingenen</a>.
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/04c387c889.js"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
